@@ -1,0 +1,107 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 50px;
+            background-color: #D5C7A3   ;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+.nav-scrolled {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 15px 50px;
+        }
+.nav-scrolled .logo {
+            color: white;
+        }
+.nav-scrolled .nav-links a {
+            color: white;
+        }
+.logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+.logo:hover {
+            color: #ff6b6b;
+        }
+
+.nav-scrolled {
+            background-color: rgba(0, 0, 0, 0.9);
+            padding: 15px 50px;
+        }
+.nav-scrolled .logo {
+            color: #fff;
+        }
+.nav-scrolled .nav-links a {
+            color: #fff;
+        }
+.logo {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+.logo:hover {
+            color: black;
+        }
+.nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        .nav-links a {
+            position: relative;
+            color: #333;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 16px;
+            transition: all 0.5s ease;
+            padding: 5px 0;
+        }
+        .nav-links a:hover {
+            color: black;
+        }
+ .nav-links a::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color:black;
+            transition: width 0.3s ease;
+        }
+.nav-links a:hover::after {
+            width: 100%;
+        }
+        /* Page content to demonstrate scrolling */
+main {
+            height: 2000px;
+            padding-top: 100px;
+            background: black;
+        }
+section {
+            padding: 100px 50px;
+            text-align: center;
+        }
+ h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            color: red;
+        }
+        
